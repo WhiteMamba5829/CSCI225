@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head><title>Contact Page</title></head>
+<body style="background-color: pink;">
+    <!--video-->
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-AuQZrUHjhg?si=4FXjtLZZYKPLC_hY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <!--form-->
+<form name="feedback">
+    <p>First name: <input type="text" placeholder="anonymous" name="fname" required></p>
+    <p>Last name: <input type="text" placeholder="anonymous" name="lname" required></p>
+    <p>Email: <input type="email" placeholder="name@domain.com" name="mail" required></p>
+    <!--yes/no radio-->
+    <p><b>Would you recommend this website?</b></p>
+    <p><input type="radio" name="question" value="yes">yes
+	<input type="radio" name="question" value="no">no</p>
+    <!--favorite website selection-->
+    <p><b>Select your favorite website:</b></p>
+        <select name="website" size="5">
+        <option value="Google">Google</option>
+        <option value="Facebook">Facebook</option>
+        <option value="Instagram">Instagram</option>
+        <option value="YouTube">YouTube</option>
+        <option value="Twitch">Twitch</option>
+        </select>
+    <!--range rating-->
+    <p><b>How would you rate this website from 1-10?</b></p>
+    <p><input type="range" name="rating" step="1" list="steplist" min="1" max="10"></p>
+    <datalist id="steplist">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+    </datalist>
+    <!--extra comments-->
+    <p><b>Additional Comments:</b></p>
+       <p><textarea name="comment" rows="10" cols="80" autofocus></textarea></p>
+    <!--three extra features-->
+    <p><b>Explore other HTML features:</b></p>
+        <p>Color Selector: <input type="color" name="frontcolor"></p>
+		<p>Date Selector: <input type="date" name="date"></p>
+	    <p>Date Time Selector: <input type="datetime" name="datetime"></p>
+    <!--submit/reset-->
+    <p><input type="submit" value="Submit">
+	<input type="reset" value="Reset"></p>
+</form>
+</body>
+</html>
